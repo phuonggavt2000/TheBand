@@ -1,0 +1,118 @@
+/*  Pc >= 1024px
+    Tablet >= 740px and <= 1023px
+    Mobile <= 739px
+*/
+
+/* PC */
+@media (min-width: 64em) {
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+
+/* Tablet and Mobile*/
+@media (max-width: 63.9375em) {
+  
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+  .s-full-width {
+    width: 100%;
+  }
+
+  .s-bnt {
+    width: 100%;
+    height: 45px;
+  }
+
+  #header {
+    overflow: hidden;
+  }
+
+  #nav {
+    display: block;
+  }
+
+  #nav > li {
+    display: block;
+  }
+
+  #nav > li:first-child {
+    display: inline-block;
+  }
+
+  .bnt-search {
+    display: none;
+  }
+
+  .s-bnt-menu {
+    display: block;
+  }
+
+  .s-bnt-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: aliceblue;
+    height: 47px;
+    width: 61px;
+    text-align: center;
+  }
+
+  .s-bnt-menu:hover {
+    background-color: #ccc;
+    color: black;
+  }
+  .s-bnt-menu i {
+  line-height: 47px;    
+  }
+
+  .sub-nav {
+    box-shadow: none;
+    background-color: #3A3845;
+    width: 100%;
+  }
+
+  .sub-nav li a {
+    color: #fff;
+    padding-left: 19px;
+  }
+
+  .s-member {
+    margin-top: 12px;
+  }
+
+  .member img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .s-tour-item {
+    margin-bottom: 16px;
+  }
+
+  .input-name input {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+  }
+
+  .input-email input {
+    float: none;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .input-mes {
+    padding: 12px;
+  }
+
+  .contain-modal {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+
+}

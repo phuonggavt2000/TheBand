@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./asset/style.css" />
+    <link rel="stylesheet" href="./asset/responsive.css">
     <link
       rel="stylesheet"
       href="./asset/icon/themify-icons/themify-icons.css"
@@ -31,8 +32,13 @@
           </ul>
         </li>
       </ul>
+
       <div class="bnt-search">
         <i class="ti-search text-white"></i>
+      </div>
+
+      <div class="s-bnt-menu">
+        <i class="ti-menu"></i>
       </div>
     </div>
 
@@ -48,7 +54,7 @@
       <div id="band" class="contain-section">
         <h1 class="heading-content text-center">THE BAND</h1>
         <p class="sub-heading-content text-center">We love music</p>
-        <p class="row text-about">
+        <p class="text-about s-description">
           We have created a fictional band website. Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -62,15 +68,15 @@
           consequat.
         </p>
         <div class="row text-center">
-          <div class="col-third member">
+          <div class="col-third member s-full-width s-member">
             <p>Name</p>
             <img src="./asset/img/Member/bandmember (1).jpg" alt="" />
           </div>
-          <div class="col-third member">
+          <div class="col-third member s-full-width s-member">
             <p>Name</p>
             <img src="./asset/img/Member/bandmember (1).jpg" alt="" />
           </div>
-          <div class="col-third member">
+          <div class="col-third member s-full-width s-member">
             <p>Name</p>
             <img src="./asset/img/Member/bandmember (1).jpg" alt="" />
           </div>
@@ -97,11 +103,11 @@
             <li>November <span class="num-ticket">3</span></li>
           </ul>
           <!-- Place -->
-          <div class="row">
-            <div class="col-third">
+          <div class="row list-tour sm-list-tour">
+            <div class="col-third s-full-width s-tour-item ">
               <img
                 class="img-place"
-                src="./asset/img/place/newyork.jpg"
+                src="./asset/img/place/newyork.jpg" 
                 alt=""
               />
               <div class="contain-content-place">
@@ -110,10 +116,10 @@
                 <p class="content-place">
                   Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                 </p>
-                <button class="buy-ticket">Buy Tickets</button>
+                <button class="buy-ticket s-bnt">Buy Tickets</button>
               </div>
             </div>
-            <div class="col-third">
+            <div class="col-third s-full-width s-tour-item">
               <img class="img-place" src="./asset/img/place/paris.jpg" alt="" />
               <div class="contain-content-place">
                 <h3 class="heading-place">Paris</h3>
@@ -121,10 +127,10 @@
                 <p class="content-place">
                   Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                 </p>
-                <button class="buy-ticket">Buy Tickets</button>
+                <button class="buy-ticket s-bnt">Buy Tickets</button>
               </div>
             </div>
-            <div class="col-third">
+            <div class="col-third s-full-width s-tour-item">
               <img
                 class="img-place"
                 src="./asset/img/place/sanfran.jpg"
@@ -136,7 +142,7 @@
                 <p class="content-place">
                   Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                 </p>
-                <button class="buy-ticket">Buy Tickets</button>
+                <button class="buy-ticket s-bnt">Buy Tickets</button>
               </div>
             </div>
           </div>
@@ -149,17 +155,17 @@
         <p class="sub-heading-content text-center">Fan? Drop a note!</p>
 
         <div class="row">
-          <div class="contact-address col-two">
+          <div class="contact-address col-two s-full-width">
             <p><i class="ti-location-pin"></i> Chicago, US</p>
             <p><i class="ti-headphone-alt"></i> Phone: +00 151515</p>
             <p><i class="ti-email"></i> Email: mail@mail.com</p>
           </div>
-          <div class="col-two">
+          <div class="col-two s-full-width">
             <div class="contain-input-address">
-              <div class="input-name input-address">
+              <div class="input-name input-address s-full-width ">
                 <input type="text" placeholder="Name" />
               </div>
-              <div class="input-email input-address">
+              <div class="input-email input-address s-full-width">
                 <input type="email" placeholder="Email" />
               </div>
             </div>
@@ -167,7 +173,7 @@
             <div class="contant-input-mes">
               <input type="text" placeholder="Message" class="input-mes" />
             </div>
-            <button class="bnt-send">SEND</button>
+            <button class="bnt-send s-bnt">SEND</button>
           </div>
         </div>
       </div>
@@ -255,6 +261,23 @@
       function closeModal(e) {
         modal.classList.remove("open");
       }
+
+      // click Menu
+      var bntMenu = document.querySelector('.s-bnt-menu')
+      var eleheader = document.querySelector("#header")
+      var heightHeader = eleheader.clientHeight
+
+      bntMenu.addEventListener("click", function (e) {
+        var isHeight = eleheader.clientHeight === heightHeader
+        console.log(isHeight)
+        if (isHeight) {
+          eleheader.style.height = "auto"
+          eleheader.style.overflow = "initial"
+        } else {
+          eleheader.style.height = "47px"
+          eleheader.style.overflow = "hidden"
+        }
+      })
     </script>
   </body>
 </html>

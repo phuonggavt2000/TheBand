@@ -10,9 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 .row {
   padding: 32px 0;
-  margin: 0 -8px;
 }
 
 .row::after {
@@ -29,7 +30,6 @@ html {
 
 .col-two {
   float: left;
-  padding: 0 8px;
   width: 50%;
 }
 
@@ -39,6 +39,10 @@ html {
 
 .text-white {
   color: #fff;
+}
+
+.slider-content p {
+  text-shadow: 0 0 10px #000;
 }
 
 .text-black {
@@ -121,9 +125,14 @@ html {
   padding: 0 23px;
 }
 
+
 .bnt-search:hover {
   background-color: red;
   cursor: pointer;
+}
+
+.s-bnt-menu {
+  display: none;
 }
 
 #slider {
@@ -157,7 +166,7 @@ html {
 .contain-section {
   max-width: 800px;
   margin: 0 auto 0 auto;
-  padding: 64px 0;
+  padding: 64px 12px;
 }
 
 .heading-content {
@@ -176,6 +185,7 @@ html {
   text-align: justify;
   line-height: 1.3;
   font-size: 15px;
+  max-width: 100%;
 }
 
 .member p {
@@ -231,6 +241,10 @@ span.num-ticket {
   font-size: 15px;
 }
 
+.list-tour {
+  margin: 0 -7px
+}
+
 .img-place {
   width: 100%;
   display: block;
@@ -283,6 +297,7 @@ span.num-ticket {
 
 .contain-modal {
   width: 900px;
+  max-width: 100%;
   min-height: 100px;
   background-color: #fff;
   position: absolute;
@@ -395,6 +410,8 @@ span.num-ticket {
 /* contact */
 .contain-input-address {
   overflow: hidden;
+  margin: 0 -8px;
+  padding: 0 8px;
 }
 
 .input-address {
@@ -407,14 +424,14 @@ span.num-ticket {
 }
 
 .input-name input {
-  padding: 8px 12px;
+  padding: 8px;
   display: inline-block;
   border: 1px solid #ccc;
 }
 
 .input-email input {
   float: right;
-  padding: 8px 12px;
+  padding: 8px;
   border: 1px solid #ccc;
 }
 
