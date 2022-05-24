@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./asset/style.css" />
-    <link rel="stylesheet" href="./asset/responsive.css">
+    <link rel="stylesheet" href="./asset/responsive.css" />
     <link
       rel="stylesheet"
       href="./asset/icon/themify-icons/themify-icons.css"
     />
-    <link rel="shortcut icon" href="https://themify.me/wp-content/themes/themify-v32/favicon.png">
+    <link
+      rel="shortcut icon"
+      href="https://themify.me/wp-content/themes/themify-v32/favicon.png"
+    />
   </head>
   <body>
     <div id="header">
@@ -104,10 +107,10 @@
           </ul>
           <!-- Place -->
           <div class="row list-tour sm-list-tour">
-            <div class="col-third s-full-width s-tour-item ">
+            <div class="col-third s-full-width s-tour-item">
               <img
                 class="img-place"
-                src="./asset/img/place/newyork.jpg" 
+                src="./asset/img/place/newyork.jpg"
                 alt=""
               />
               <div class="contain-content-place">
@@ -162,7 +165,7 @@
           </div>
           <div class="col-two s-full-width">
             <div class="contain-input-address">
-              <div class="input-name input-address s-full-width ">
+              <div class="input-name input-address s-full-width">
                 <input type="text" placeholder="Name" />
               </div>
               <div class="input-email input-address s-full-width">
@@ -198,41 +201,47 @@
 
     <!-- modal buy ticket -->
     <div class="modal">
-      <div class="contain-modal">
-        <header class="header-modal">
-          <h1 class="text-center"><i class="ti-bag"></i> Tickets</h1>
-          <span class="bnt-close-modal js-close">
-            <i class="ti-close"></i>
-          </span>
-        </header>
+      <div class="sub-modal">
+        <div class="contain-modal">
+          <header class="header-modal">
+            <h1 class="text-center"><i class="ti-bag"></i> Tickets</h1>
+            <span class="bnt-close-modal js-close">
+              <i class="ti-close"></i>
+            </span>
+          </header>
 
-        <div class="content-modal">
-          <form class="form-modal" action="">
-            <label class="lb-modal" for="">
-              <i class="ti-shopping-cart"></i>
-              Tickets, $15 per person
-            </label>
-            <input placeholder="How many?" type="text" class="input-modal" />
+          <div class="content-modal">
+            <form class="form-modal" action="">
+              <label class="lb-modal" for="">
+                <i class="ti-shopping-cart"></i>
+                Tickets, $15 per person
+              </label>
+              <input placeholder="How many?" type="text" class="input-modal" />
 
-            <label class="lb-modal" for="">
-              <i class="ti-user"></i> 
-              Send To
-            </label>
-            <input placeholder="Enter email" type="email" class="input-modal" />
+              <label class="lb-modal" for="">
+                <i class="ti-user"></i>
+                Send To
+              </label>
+              <input
+                placeholder="Enter email"
+                type="email"
+                class="input-modal"
+              />
 
-            <button>
-              PAY 
-              <i class="ti-check" style="font-size: 13px"></i>
+              <button>
+                PAY
+                <i class="ti-check" style="font-size: 13px"></i>
+              </button>
+            </form>
+          </div>
+
+          <footer class="footer-modal">
+            <button class="js-close">
+              Close <i class="ti-close" style="font-size: 10px"></i>
             </button>
-          </form>
+            <p>Need <a href="">help?</a></p>
+          </footer>
         </div>
-
-        <footer class="footer-modal">
-          <button class="js-close">
-            Close <i class="ti-close" style="font-size: 10px"></i>
-          </button>
-          <p>Need <a href="">help?</a></p>
-        </footer>
       </div>
     </div>
 
@@ -263,21 +272,21 @@
       }
 
       // click Menu
-      var bntMenu = document.querySelector('.s-bnt-menu')
-      var eleheader = document.querySelector("#header")
-      var heightHeader = eleheader.clientHeight
+      var bntMenu = document.querySelector(".s-bnt-menu");
+      var eleheader = document.querySelector("#header");
+      var heightHeader = eleheader.clientHeight;
 
       bntMenu.addEventListener("click", function (e) {
-        var isHeight = eleheader.clientHeight === heightHeader
-        console.log(isHeight)
+        var isHeight = eleheader.clientHeight === heightHeader;
+        console.log(isHeight);
         if (isHeight) {
-          eleheader.style.height = "auto"
-          eleheader.style.overflow = "initial"
+          eleheader.style.height = "auto";
+          eleheader.style.overflow = "initial";
         } else {
-          eleheader.style.height = "47px"
-          eleheader.style.overflow = "hidden"
+          eleheader.style.height = "47px";
+          eleheader.style.overflow = "hidden";
         }
-      })
+      });
     </script>
   </body>
 </html>

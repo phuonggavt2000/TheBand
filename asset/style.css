@@ -295,15 +295,20 @@ span.num-ticket {
   display: block;
 }
 
+.sub-modal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contain-modal {
   width: 900px;
   max-width: 100%;
   min-height: 100px;
   background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-60%);
+  margin: 0 20px;
   animation: moveModal ease 0.4s;
 }
 
@@ -410,32 +415,31 @@ span.num-ticket {
 /* contact */
 .contain-input-address {
   overflow: hidden;
-  margin: 0 -8px;
-  padding: 0 8px;
+  margin: 0 -6px;
 }
 
 .input-address {
   float: left;
   width: 50%;
-}
-
-.input-name {
-  overflow: hidden;
+  padding: 0 6px;
 }
 
 .input-name input {
-  padding: 8px;
+  padding: 8px 14px;
   display: inline-block;
   border: 1px solid #ccc;
+  width: 100%;
 }
 
 .input-email input {
   float: right;
-  padding: 8px;
+  padding: 8px 14px;
   border: 1px solid #ccc;
+  width: 100%;
 }
 
 .input-mes {
+  width: auto;
   margin: 8px 0;
   width: 100%;
   padding: 8px;
